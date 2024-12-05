@@ -32,7 +32,6 @@ export default function Header() {
   }, []);
 
   const sections = ["home", "about", "skills", "projects", "contact"];
-  console.log(isScrolled);
 
   return (
     <header

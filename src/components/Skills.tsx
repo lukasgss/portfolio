@@ -1,19 +1,19 @@
-import javascript from '../assets/images/tech/javascript.png'
-import reactQuery from '../assets/images/tech/react-query.png'
-import react from '../assets/images/tech/react.png'
-import tailwind from '../assets/images/tech/tailwind.png'
-import typescript from '../assets/images/tech/typescript.png'
+import javascript from "../assets/images/tech/javascript.webp";
+import reactQuery from "../assets/images/tech/react-query.webp";
+import react from "../assets/images/tech/react.webp";
+import tailwind from "../assets/images/tech/tailwind.webp";
+import typescript from "../assets/images/tech/typescript.webp";
 
-import azurePipelines from '../assets/images/tech/azure-pipelines.png'
-import docker from '../assets/images/tech/docker.webp'
-import dotnet from '../assets/images/tech/dotnet.png'
-import efCore from '../assets/images/tech/efCore.png'
-import kafka from '../assets/images/tech/kafka.png'
-import kubernetes from '../assets/images/tech/kubernetes.svg'
-import postgres from '../assets/images/tech/postgresql.png'
-import rabbitmq from '../assets/images/tech/rabbitmq.svg'
-import redis from '../assets/images/tech/redis.svg'
-import xunit from '../assets/images/tech/xunit.png'
+import azurePipelines from "../assets/images/tech/azure-pipelines.webp";
+import docker from "../assets/images/tech/docker.webp";
+import dotnet from "../assets/images/tech/dotnet.webp";
+import efCore from "../assets/images/tech/efCore.webp";
+import kafka from "../assets/images/tech/kafka.webp";
+import kubernetes from "../assets/images/tech/kubernetes.svg";
+import postgres from "../assets/images/tech/postgresql.webp";
+import rabbitmq from "../assets/images/tech/rabbitmq.svg";
+import redis from "../assets/images/tech/redis.svg";
+import xunit from "../assets/images/tech/xunit.webp";
 
 function IconDesktop() {
   return (
@@ -34,7 +34,7 @@ function IconDesktop() {
       <path d="M9 16v4" />
       <path d="M15 16v4" />
     </svg>
-  )
+  );
 }
 
 function IconServer() {
@@ -56,7 +56,7 @@ function IconServer() {
       <path d="M7 8l0 .01" />
       <path d="M7 16l0 .01" />
     </svg>
-  )
+  );
 }
 
 export default function Skills() {
@@ -249,5 +249,5 @@ export default function Skills() {
         </div>
       </div>
     </section>
-  )
+  );
 }

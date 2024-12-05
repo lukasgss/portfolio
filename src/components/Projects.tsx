@@ -1,85 +1,85 @@
-import { useState } from 'react'
-import acheMeuPet from '../assets/images/acheMeuPet.png'
-import bsCommerce from '../assets/images/bsCommerce.png'
-import esporti from '../assets/images/eSporti.png'
-import multisports from '../assets/images/multisports.png'
-import schools from '../assets/images/schools.png'
-import surpriseLove from '../assets/images/surpriseLove.png'
-import theConsulting from '../assets/images/theConsulting.png'
-import youin from '../assets/images/youin.png'
+import { useState } from "react";
+import acheMeuPet from "../assets/images/acheMeuPet.webp";
+import bsCommerce from "../assets/images/bsCommerce.webp";
+import esporti from "../assets/images/eSporti.webp";
+import multisports from "../assets/images/multisports.webp";
+import schools from "../assets/images/schools.webp";
+import surpriseLove from "../assets/images/surpriseLove.webp";
+import theConsulting from "../assets/images/theConsulting.webp";
+import youin from "../assets/images/youin.webp";
 
-type ProjectType = 'all' | 'work' | 'personal'
+type ProjectType = "all" | "work" | "personal";
 
 export default function Projects() {
   const [currentActiveFilter, setCurrentActiveFilter] =
-    useState<ProjectType>('all')
+    useState<ProjectType>("all");
 
   const projects = [
     {
-      type: 'personal',
-      name: 'AcheMeuPet',
+      type: "personal",
+      name: "AcheMeuPet",
       description:
-        'Aplicação web para encontrar um lar a animais de rua, seja perdidos, abandonados ou para adoção.',
+        "Aplicação web para encontrar um lar a animais de rua, seja perdidos, abandonados ou para adoção.",
       image: acheMeuPet.src,
-      link: 'https://achemeupet.com.br/',
+      link: "https://achemeupet.com.br/",
     },
     {
-      type: 'personal',
-      name: 'SurpriseLove',
+      type: "personal",
+      name: "SurpriseLove",
       description:
-        'SaaS criado para surpreender o(a) namorado(a) com um site personalizado.',
+        "SaaS criado para surpreender o(a) namorado(a) com um site personalizado.",
       image: surpriseLove.src,
-      link: 'https://surprise-love-landing-page.vercel.app/',
+      link: "https://surprise-love-landing-page.vercel.app/",
     },
     {
-      type: 'work',
-      name: 'YouIn',
+      type: "work",
+      name: "YouIn",
       description:
-        'Canal de ética e ouvidoria para tratagem de denúncias, sugestões e muitos outros na organização.',
+        "Canal de ética e ouvidoria para tratagem de denúncias, sugestões e muitos outros na organização.",
       image: youin.src,
-      link: 'https://youin.digital/',
+      link: "https://youin.digital/",
     },
     {
-      type: 'work',
-      name: 'BS Commerce',
+      type: "work",
+      name: "BS Commerce",
       description:
-        'Sincronização bidirecional dos dados entre o e-commerce com o ERP do cliente.',
+        "Sincronização bidirecional dos dados entre o e-commerce com o ERP do cliente.",
       image: bsCommerce.src,
-      link: 'https://portal.brunsker.com.br/solucoes/bs-ecommerce',
+      link: "https://portal.brunsker.com.br/solucoes/bs-ecommerce",
     },
     {
-      type: 'work',
-      name: 'The Consulting',
+      type: "work",
+      name: "The Consulting",
       description:
-        'Ferramenta de recrutamento de candidatos utilizando banco de talentos.',
+        "Ferramenta de recrutamento de candidatos utilizando banco de talentos.",
       image: theConsulting.src,
-      link: 'https://www.grupothe.com.br/the-consulting',
+      link: "https://www.grupothe.com.br/the-consulting",
     },
     {
-      type: 'work',
-      name: 'e-SporTI',
+      type: "work",
+      name: "e-SporTI",
       description:
-        'Aplicação web para organização de torneios de games online ou presenciais.',
+        "Aplicação web para organização de torneios de games online ou presenciais.",
       image: esporti.src,
-      link: 'https://www.sporti.com.br/esports.html',
+      link: "https://www.sporti.com.br/esports.html",
     },
     {
-      type: 'work',
-      name: 'Multisports',
+      type: "work",
+      name: "Multisports",
       description:
-        'Plataforma de gestão esportiva para torneios, ligas, federações, projetos e organizações esportivas.',
+        "Plataforma de gestão esportiva para torneios, ligas, federações, projetos e organizações esportivas.",
       image: multisports.src,
-      link: 'https://www.sporti.com.br/multisports.html',
+      link: "https://www.sporti.com.br/multisports.html",
     },
     {
-      type: 'work',
-      name: 'Schools',
+      type: "work",
+      name: "Schools",
       description:
-        'Plataforma para gestão de escolas, franquias e redes de escolas de esporte.',
+        "Plataforma para gestão de escolas, franquias e redes de escolas de esporte.",
       image: schools.src,
-      link: 'https://www.sporti.com.br/schools.html',
+      link: "https://www.sporti.com.br/schools.html",
     },
-  ]
+  ];
 
   return (
     <section
@@ -92,11 +92,11 @@ export default function Projects() {
       <div className="flex mt-4 gap-5">
         <button
           type="button"
-          onClick={() => setCurrentActiveFilter('all')}
+          onClick={() => setCurrentActiveFilter("all")}
           className={`px-3 py-1 rounded-md ${
-            currentActiveFilter === 'all'
-              ? 'bg-white text-black font-semibold'
-              : 'text-[#d9d9d9] bg-transparent'
+            currentActiveFilter === "all"
+              ? "bg-white text-black font-semibold"
+              : "text-[#d9d9d9] bg-transparent"
           }`}
         >
           Todos
@@ -104,11 +104,11 @@ export default function Projects() {
 
         <button
           type="button"
-          onClick={() => setCurrentActiveFilter('work')}
+          onClick={() => setCurrentActiveFilter("work")}
           className={`px-3 py-1 rounded-md ${
-            currentActiveFilter === 'work'
-              ? 'bg-white text-black font-semibold'
-              : 'text-[#d9d9d9] bg-transparent hover:bg-[#d9d9d9] hover:text-black'
+            currentActiveFilter === "work"
+              ? "bg-white text-black font-semibold"
+              : "text-[#d9d9d9] bg-transparent hover:bg-[#d9d9d9] hover:text-black"
           }`}
         >
           Profissional
@@ -116,11 +116,11 @@ export default function Projects() {
 
         <button
           type="button"
-          onClick={() => setCurrentActiveFilter('personal')}
+          onClick={() => setCurrentActiveFilter("personal")}
           className={`px-3 py-1 rounded-md ${
-            currentActiveFilter === 'personal'
-              ? 'bg-white text-black font-semibold'
-              : 'text-[#d9d9d9] bg-transparent hover:bg-[#d9d9d9] hover:text-black'
+            currentActiveFilter === "personal"
+              ? "bg-white text-black font-semibold"
+              : "text-[#d9d9d9] bg-transparent hover:bg-[#d9d9d9] hover:text-black"
           }`}
         >
           Pessoal
@@ -132,7 +132,7 @@ export default function Projects() {
           .filter(
             (project) =>
               project.type === currentActiveFilter ||
-              currentActiveFilter === 'all',
+              currentActiveFilter === "all"
           )
           .map((project) => (
             <a
@@ -163,5 +163,5 @@ export default function Projects() {
           ))}
       </div>
     </section>
-  )
+  );
 }

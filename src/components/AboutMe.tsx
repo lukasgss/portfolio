@@ -1,6 +1,6 @@
 import ButtonLink from "./common/ButtonLink";
 
-import lucasGomes from "../assets/images/lucas-gomes-2.jpg";
+import lucasGomes from "../assets/images/lucas-gomes-2.webp";
 
 function AwardIcon() {
   return (
@@ -161,6 +161,7 @@ export default function AboutMe() {
 
       <img
         src={lucasGomes.src}
+        loading="lazy"
         alt="Lucas Gomes"
         className="rounded-full w-[200px] h-[200px]"
       />

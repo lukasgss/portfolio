@@ -1,8 +1,8 @@
 @font-face {
-  font-family: 'Poppins Regular';
-  src: url('./assets/fonts/Poppins-Regular.ttf') format('truetype'),
-    url('./assets/fonts/Poppins-Medium.ttf') format('truetype'),
-    url('./assets/fonts/Poppins-Bold.ttf') format('truetype');
+  font-family: "Poppins Regular";
+  src: url("./assets/fonts/Poppins-Regular.ttf") format("truetype"),
+    url("./assets/fonts/Poppins-Medium.ttf") format("truetype"),
+    url("./assets/fonts/Poppins-Bold.ttf") format("truetype");
 }
 
 html {
@@ -10,21 +10,21 @@ html {
 }
 
 body {
-  font-family: 'Poppins Regular', sans-serif;
+  font-family: "Poppins Regular", sans-serif;
   color: white;
 }
 
 body::before {
-  content: '';
+  content: "";
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   min-height: 100vh;
   width: 100vw;
-  background: url('./assets/images/backgroundDesktop.jpg') no-repeat
+  background: url("./assets/images/backgroundDesktop.jpg") no-repeat
     center/cover;
-  background-size: 'contain';
+  background-size: "contain";
   z-index: -1;
 }
 
@@ -60,7 +60,7 @@ body::before {
 }
 
 .home-img {
-  background: url('./assets/images/lucas-gomes.jpg');
+  background: url("./assets/images/lucas-gomes.jpg");
   background-position-x: 0%;
   background-position-y: 0%;
   background-repeat: repeat;
@@ -84,12 +84,12 @@ body::before {
 }
 
 .responsive-text::after {
-  content: '+15 desenv.';
+  content: "+15 desenv.";
 }
 
 @media (min-width: 768px) {
   .responsive-text::after {
-    content: '+15 desenvolvidos';
+    content: "+15 desenvolvidos";
   }
 }
 
@@ -142,4 +142,16 @@ body::before {
 
 .scroll-up-button:hover {
   opacity: 0.9;
+}
+
+.animation-container > span {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .animation-container > span {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }

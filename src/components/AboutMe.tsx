@@ -1,6 +1,6 @@
-import ButtonLink from './common/ButtonLink'
+import ButtonLink from "./common/ButtonLink";
 
-import lucasGomes from '../assets/images/lucas-gomes-2.jpg'
+import lucasGomes from "../assets/images/lucas-gomes-2.jpg";
 
 function AwardIcon() {
   return (
@@ -19,7 +19,7 @@ function AwardIcon() {
       <path d="M12 4v3m-4 -3v6m8 -6v6" />
       <path d="M12 18.5l-3 1.5l.5 -3.5l-2 -2l3 -.5l1.5 -3l1.5 3l3 .5l-2 2l.5 3.5z" />
     </svg>
-  )
+  );
 }
 
 function WorkIcon() {
@@ -41,7 +41,7 @@ function WorkIcon() {
       <path d="M12 12l0 .01" />
       <path d="M3 13a20 20 0 0 0 18 0" />
     </svg>
-  )
+  );
 }
 
 function WorldIcon() {
@@ -87,7 +87,7 @@ function WorldIcon() {
         strokeWidth="16"
       />
     </svg>
-  )
+  );
 }
 
 function ResumeIcon() {
@@ -107,9 +107,9 @@ function ResumeIcon() {
         transform="translate(24.22 -20.31) rotate(10.02)"
         fill="none"
         stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="16"
       />
       <line
         x1="97.22"
@@ -145,11 +145,11 @@ function ResumeIcon() {
         strokeWidth="16"
       />
     </svg>
-  )
+  );
 }
 
 export default function AboutMe() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <section
@@ -196,7 +196,7 @@ export default function AboutMe() {
         </div>
       </div>
 
-      <p className="text-slate-200 w-full lg:max-w-[75%] mt-7">
+      <p className="text-slate-200 w-full lg:max-w-[80%] mt-7 text-lg lg:text-xl">
         Desenvolvedor .NET especializado em criar aplicações web robustas e
         escaláveis. Experiência em desenvolvimento full stack com .NET, xUnit e
         bancos de dados SQL e NoSQL. Foco na arquitetura adequada pro projeto e
@@ -213,5 +213,5 @@ export default function AboutMe() {
         <ResumeIcon />
       </ButtonLink>
     </section>
-  )
+  );
 }

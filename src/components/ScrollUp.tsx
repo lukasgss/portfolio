@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from "react";
 
 function ScrollUpIcon() {
   return (
@@ -18,31 +18,31 @@ function ScrollUpIcon() {
       <path d="M16 9l-4 -4" />
       <path d="M8 9l4 -4" />
     </svg>
-  )
+  );
 }
 
 export default function ScrollUp() {
-  const [isVisible, setIsVisible] = useState(false)
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setIsVisible(!entry.isIntersecting)
+        setIsVisible(!entry.isIntersecting);
       },
-      { threshold: 0.1 },
-    )
+      { threshold: 0.1 }
+    );
 
-    const element = document.createElement('div')
-    element.style.height = '10px'
-    document.body.prepend(element)
+    const element = document.createElement("div");
+    element.style.height = "10px";
+    document.body.prepend(element);
 
-    observer.observe(element)
+    observer.observe(element);
 
     return () => {
-      observer.disconnect()
-      element.remove()
-    }
-  }, [])
+      observer.disconnect();
+      element.remove();
+    };
+  }, []);
 
   return (
     <a
@@ -53,16 +53,16 @@ export default function ScrollUp() {
         bg-[#b0b0b1] 
         flex items-center justify-center 
         rounded-full text-[#111212]
-        opacity-80 hover:opacity-90 
+        opacity-80 hover:opacity-100 hover:brightness-125
         transition-all duration-300
         ${
           isVisible
-            ? 'translate-y-0 opacity-80'
-            : 'translate-y-20 opacity-0 pointer-events-none'
+            ? "translate-y-0 opacity-80"
+            : "translate-y-20 opacity-0 pointer-events-none"
         }
       `}
     >
       <ScrollUpIcon />
     </a>
-  )
+  );
 }

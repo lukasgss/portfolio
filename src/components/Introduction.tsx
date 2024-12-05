@@ -1,5 +1,5 @@
-import { TypeAnimation } from 'react-type-animation'
-import ButtonLink from './common/ButtonLink'
+import { TypeAnimation } from "react-type-animation";
+import ButtonLink from "./common/ButtonLink";
 
 function IconLinkedin() {
   return (
@@ -21,7 +21,7 @@ function IconLinkedin() {
       <path d="M16 16v-3a2 2 0 1 0 -4 0" />
       <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" />
     </svg>
-  )
+  );
 }
 
 function IconGithub() {
@@ -40,7 +40,7 @@ function IconGithub() {
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
     </svg>
-  )
+  );
 }
 
 function IconSend() {
@@ -60,7 +60,7 @@ function IconSend() {
       <path d="M10 14l11 -11" />
       <path d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5" />
     </svg>
-  )
+  );
 }
 
 function IconMouse() {
@@ -72,25 +72,25 @@ function IconMouse() {
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       style={{
-        fillRule: 'evenodd',
-        clipRule: 'evenodd',
-        strokeLinecap: 'round',
-        strokeLinejoin: 'round',
+        fillRule: "evenodd",
+        clipRule: "evenodd",
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
         strokeMiterlimit: 1.5,
       }}
     >
       <path
         className="animate-[scroll_2s_ease_infinite]"
         d="M123.359,79.775l0,72.843"
-        style={{ fill: 'none', stroke: '#b7b4b9', strokeWidth: '20px' }}
+        style={{ fill: "none", stroke: "#b7b4b9", strokeWidth: "20px" }}
       ></path>
       <path
         id="mouse"
         d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z"
-        style={{ fill: 'none', stroke: '#b7b4b9', strokeWidth: '20px' }}
+        style={{ fill: "none", stroke: "#b7b4b9", strokeWidth: "20px" }}
       ></path>
     </svg>
-  )
+  );
 }
 
 function IconArrowDown() {
@@ -111,7 +111,7 @@ function IconArrowDown() {
       <path d="M18 13l-6 6" />
       <path d="M6 13l6 6" />
     </svg>
-  )
+  );
 }
 
 function IconWhatsApp() {
@@ -131,14 +131,14 @@ function IconWhatsApp() {
       <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
       <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
     </svg>
-  )
+  );
 }
 
 export default function Introduction() {
   return (
     <section
       id="home"
-      className="bg-transparent w-[90%] md:w-[59%] lg:w-[80%] xl:w-[59%] mx-auto transition-all duration-200 min-h-screen 
+      className="bg-transparent w-[90%] md:w-[59%] lg:w-[80%] xl:w-[70%] mx-auto transition-all duration-200 min-h-screen 
       h-fit pt-20 md:pt-36 scroll-m-[500px]"
     >
       <div className="flex flex-col items-center lg:grid lg:gap-5 xl:gap-0 gap-0 lg:grid-cols-9">
@@ -172,23 +172,22 @@ export default function Introduction() {
           <div className="lg:hidden home-img col-span-4" />
         </div>
 
-        <div className="col-span-4 mt-8">
-          <h3 className="text-xl font-semibold text-[#831699]">Olá, eu sou</h3>
+        <div className="animation-container col-span-4 mt-8">
+          <h3 className="text-2xl font-semibold text-[#831699]">Olá, eu sou</h3>
           <TypeAnimation
-            sequence={['Lucas Gomes', 2000, 'Desenvolvedor Full Stack', 2000]}
+            sequence={["Lucas Gomes", 2000, "Desenvolvedor Full Stack", 2000]}
             speed={10}
             deletionSpeed={55}
-            style={{ fontSize: '1.875rem', lineHeight: '2.25rem' }}
             repeat={Infinity}
           />
 
-          <p className="max-w-[400px] text-slate-300">
+          <p className="max-w-[450px] text-slate-300 text-lg md:text-xl lg:mt-3">
             Desenvolvedor de software, bacharel em andamento em Sistemas de
             Informação e apaixonado por tecnologia.
           </p>
 
           <ButtonLink
-            link="#contato"
+            link="#contact"
             icon={<IconSend />}
             className="mt-8 md:mt-16"
           >
@@ -207,5 +206,5 @@ export default function Introduction() {
         </a>
       </div>
     </section>
-  )
+  );
 }

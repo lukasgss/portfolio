@@ -1,4 +1,5 @@
-import i18n from "i18next";
+import i18n, { type TFunction } from "i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
 
 import translationEN from "../locales/en.json";
@@ -13,10 +14,12 @@ const resources = {
   },
 };
 
+let i18nPromise: Promise<TFunction<"translation", undefined>>;
+
 if (!i18n.isInitialized) {
-  i18n.use(initReactI18next).init({
+  i18nPromise = i18n.use(initReactI18next).init({
     resources,
-    debug: true,
+    debug: false,
     fallbackLng: "en",
     supportedLngs: ["en", "ptBR"],
     interpolation: {
@@ -24,3 +27,13 @@ if (!i18n.isInitialized) {
     },
   });
 }
+
+if (typeof window !== "undefined") {
+  i18n.use(LanguageDetector).init();
+}
+
+export const isI18nInitialized = async () => {
+  if (!i18nPromise) return i18n.isInitialized;
+  await i18nPromise;
+  return true;
+};

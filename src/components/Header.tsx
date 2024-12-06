@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
+import logo from "../assets/images/lgLogo.png";
+
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
@@ -44,7 +46,7 @@ export default function Header() {
         }`}
     >
       <div>
-        <h2 className="font-bold text-xl">Lucas Gomes</h2>
+        <img src={logo.src} alt="Logo" className="w-12" />
       </div>
 
       <div className="hidden md:block">

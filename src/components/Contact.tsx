@@ -144,7 +144,9 @@ export default function Contact() {
           </a>
 
           <a
-            href="https://api.whatsapp.com/send/?phone=5531984282118&text=Olá! Vi seu portfolio e gostaria de entrar em contato.&type=phone_number&app_absent=1"
+            href={`https://api.whatsapp.com/send/?phone=5531984282118&text=${t(
+              "mensagemContato"
+            )}&type=phone_number&app_absent=1`}
             target="_blank"
             rel="noreferrer"
             className="flex justify-center items-center group min-w-60"

@@ -182,7 +182,9 @@ export default function Introduction() {
             </a>
 
             <a
-              href="https://api.whatsapp.com/send/?phone=5531984282118&text=Olá! Vi seu portfólio e gostaria de entrar em contato.&type=phone_number&app_absent=1"
+              href={`https://api.whatsapp.com/send/?phone=5531984282118&text=${t(
+                "mensagemContato"
+              )}&type=phone_number&app_absent=1`}
               target="_blank"
               className="text-[#bfbfbf] hover:text-white"
             >

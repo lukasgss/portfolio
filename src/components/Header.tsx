@@ -38,7 +38,6 @@ export default function Header() {
 
   const sections = ["home", "about", "skills", "projects", "contact"];
 
-  console.log(isScrolled);
   return (
     <header
       className={`hidden md:flex bg-transparent fixed top-0 left-0 justify-between items-center h-[70px] md:px-20 lg:px-28 w-full mx-auto 

@@ -233,7 +233,7 @@ export default function Skills() {
                 src={rabbitmq.src}
                 title="RabbitMQ"
                 alt="RabbitMQ"
-                className="w-[50px] h-auto mx-auto rounded-full"
+                className="w-[50px] h-auto mx-auto"
               />
               <img
                 src={redis.src}

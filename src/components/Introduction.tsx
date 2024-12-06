@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { TypeAnimation } from "react-type-animation";
 import ButtonLink from "./common/ButtonLink";
@@ -142,7 +143,18 @@ function IconWhatsApp() {
 }
 
 export default function Introduction() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const [sequence, setSequence] = useState([
+    "Lucas Gomes",
+    2000,
+    t("introduction.subtitle"),
+    2000,
+  ]);
+
+  useEffect(() => {
+    const newSequence = ["Lucas Gomes", 2000, t("introduction.subtitle"), 2000];
+    setSequence(newSequence);
+  }, [t, i18n.language]);
 
   return (
     <section
@@ -185,12 +197,14 @@ export default function Introduction() {
           <h3 className="text-2xl font-semibold text-[#831699]">
             {t("introduction.title")}
           </h3>
-          <TypeAnimation
-            sequence={["Lucas Gomes", 2000, t("introduction.subtitle"), 2000]}
-            speed={10}
-            deletionSpeed={55}
-            repeat={Infinity}
-          />
+          <div className="text-container" key={i18n.language}>
+            <TypeAnimation
+              sequence={["Lucas Gomes", 2000, t("introduction.subtitle"), 2000]}
+              speed={10}
+              deletionSpeed={55}
+              repeat={Infinity}
+            />
+          </div>
 
           <p className="max-w-[450px] text-slate-300 text-lg md:text-xl lg:mt-3">
             {t("introduction.description")}

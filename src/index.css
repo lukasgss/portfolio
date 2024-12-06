@@ -134,13 +134,13 @@ body::before {
   opacity: 0.9;
 }
 
-.animation-container > span {
+.animation-container > .text-container > span {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
 
 @media screen and (max-width: 768px) {
-  .animation-container > span {
+  .animation-container > .text-container > span {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }

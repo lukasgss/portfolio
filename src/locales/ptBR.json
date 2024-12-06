@@ -1,0 +1,60 @@
+{
+  "header": {
+    "inicio": "Início",
+    "sobre": "Sobre",
+    "skills": "Skills",
+    "projetos": "Projetos",
+    "contato": "Contato"
+  },
+  "introduction": {
+    "title": "Olá, eu sou",
+    "subtitle": "Desenvolvedor Full Stack",
+    "description": "Desenvolvedor de software, bacharel em andamento em Sistemas de Informação e apaixonado por tecnologia.",
+    "entreEmContato": "Entre em contato",
+    "rolarParaBaixo": "Rolar para baixo"
+  },
+  "aboutMe": {
+    "experiencia": "Experiência",
+    "anos": "anos",
+    "projetos": "Projetos",
+    "desenvolvidos": "desenvolvidos",
+    "desenvolvidosShort": "desenv.",
+    "idiomas": "Idiomas",
+    "fluentes": "2 fluentes",
+    "description": "Desenvolvedor .NET especializado em criar aplicações web robustas e escaláveis. Experiência em desenvolvimento full stack com .NET, xUnit, bancos de dados SQL e NoSQL. Foco na arquitetura adequada pro projeto e princípios SOLID para entregar soluções de alta qualidade com interfaces modernas e intuitivas.",
+    "verCurriculo": "Ver currículo"
+  },
+  "skills": {
+    "habilidadesTecnicas": "Habilidades técnicas"
+  },
+  "projects": {
+    "descricaoAcheMeuPet": "Aplicação web para encontrar um lar a animais de rua, seja perdidos, abandonados ou para adoção.",
+    "descricaoSurpriseLove": "SaaS criado para surpreender o(a) namorado(a) com um site personalizado.",
+    "descricaoYouIn": "Canal de ética e ouvidoria para tratagem de denúncias, sugestões e muitos outros na organização.",
+    "descricaoBsCommerce": "Sincronização bidirecional dos dados entre o e-commerce com o ERP do cliente.",
+    "descricaoTheConsulting": "Ferramenta de recrutamento de candidatos utilizando banco de talentos.",
+    "descricaoESporti": "Aplicação web para organização de torneios de games online ou presenciais.",
+    "descricaoMultisports": "Plataforma de gestão esportiva para torneios, ligas, federações, projetos e organizações esportivas.",
+    "descricaoSchools": "Plataforma para gestão de escolas, franquias e redes de escolas de esporte.",
+    "projetos": "Projetos",
+    "todos": "Todos",
+    "profissional": "Profissional",
+    "pessoal": "Pessoal",
+    "visualizar": "Visualizar"
+  },
+  "contact": {
+    "contato": "Contato",
+    "faleComigo": "Fale comigo",
+    "enviarEmail": "Enviar e-mail",
+    "visitarPerfil": "Visitar perfil",
+    "entrarEmContato": "Entrar em contato"
+  },
+  "bandeiras": {
+    "brasil": "Brasil",
+    "eua": "EUA"
+  },
+  "linguagens": {
+    "portugues": "Português",
+    "ingles": "Inglês"
+  }
+}

@@ -1,5 +1,7 @@
 ---
+import { Suspense } from 'react';
 import AboutMe from '../components/AboutMe';
+import ChooseLanguage from '../components/ChooseLanguage';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
@@ -18,11 +20,16 @@ import "./../index.css";
 <Layout>
 	<Header client:load/>
 	<Introduction client:load/>
-	<AboutMe />
-	<Skills />
+	<AboutMe client:load/>
+	<Skills client:load/>
 	<Projects client:load/>
-	<Contact />
-	<Footer />
+	<Contact client:load/>
+	<Footer client:load/>
 
 	<ScrollUp client:load/>
+	<ChooseLanguage client:load/>
 </Layout>
+
+<script>
+  import '../i18n/i18n';
+</script>

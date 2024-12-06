@@ -4,6 +4,8 @@ export default function Footer() {
       <h2 className="font-bold text-center text-xl">
         <span className="font-normal">&copy;</span> Lucas Gomes
       </h2>
+
+      <p className="text-center mt-6">Desenvolvido com ❤️ por Lucas Gomes</p>
     </footer>
   );
 }

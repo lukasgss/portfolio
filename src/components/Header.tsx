@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
+
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -77,14 +80,14 @@ export default function Header() {
                 `}
               >
                 {section === "home"
-                  ? "Ínicio"
+                  ? t("header.inicio")
                   : section === "about"
-                  ? "Sobre"
+                  ? t("header.sobre")
                   : section === "skills"
-                  ? "Skills"
+                  ? t("header.skills")
                   : section === "projects"
-                  ? "Projetos"
-                  : "Contato"}
+                  ? t("header.projetos")
+                  : t("header.contato")}
               </a>
             </li>
           ))}

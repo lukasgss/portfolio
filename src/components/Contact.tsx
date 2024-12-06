@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 function SendMailIcon() {
   return (
     <svg
@@ -17,7 +19,7 @@ function SendMailIcon() {
       <path d="M9.02 8.801l-.6 6a2 2 0 0 0 1.99 2.199h7.98a2 2 0 0 0 1.99 -1.801l.6 -6a2 2 0 0 0 -1.99 -2.199h-7.98a2 2 0 0 0 -1.99 1.801z" />
       <path d="M9.8 7.5l2.982 3.28a3 3 0 0 0 4.238 .202l3.28 -2.982" />
     </svg>
-  )
+  );
 }
 
 function LinkedinIcon() {
@@ -40,7 +42,7 @@ function LinkedinIcon() {
       <path d="M16 16v-3a2 2 0 1 0 -4 0" />
       <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" />
     </svg>
-  )
+  );
 }
 
 function WhatsAppIcon() {
@@ -60,7 +62,7 @@ function WhatsAppIcon() {
       <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
       <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
     </svg>
-  )
+  );
 }
 
 function RightArrowIcon() {
@@ -81,20 +83,26 @@ function RightArrowIcon() {
       <path d="M13 18l6 -6" />
       <path d="M13 6l6 6" />
     </svg>
-  )
+  );
 }
 
 export default function Contact() {
+  const { t } = useTranslation();
+
   return (
     <section
       id="contact"
-      className="min-h-screen mt-20 flex flex-col items-center bg-transparent w-[85%] md:w-[59%] mx-auto scroll-m-[60px]
-      transition-all duration-200 mb-16 md:mb-0"
+      className="min-h-screen mt-20 flex flex-col items-center bg-transparent w-[85%] md:w-[59%] mx-auto 
+      lg:scroll-m-[60px] transition-all duration-200 mb-16 md:mb-0"
     >
-      <h2 className="text-3xl md:text-5xl mt-12 mb-8">Contato</h2>
+      <h2 className="text-3xl md:text-5xl mt-12 mb-8">
+        {t("contact.contato")}
+      </h2>
 
       <div className="bg-[#1a1a1a34] rounded-md px-8 md:px-16 py-4 md:py-12 border-2 mt-8 border-[rgba(255,255,255,0.1)]">
-        <h5 className="text-center text-xl md:text-3xl mb-6">Fale comigo</h5>
+        <h5 className="text-center text-xl md:text-3xl mb-6">
+          {t("contact.faleComigo")}
+        </h5>
 
         <div className="flex flex-col lg:flex-row gap-5 md:gap-10">
           <a
@@ -110,7 +118,7 @@ export default function Contact() {
               <p className="text-[#a09ba2]">lukasgss37@gmail.com</p>
 
               <p className="flex gap-2 mt-2 text-[#bab6bc]">
-                Enviar e-mail
+                {t("contact.enviarEmail")}
                 <RightArrowIcon />
               </p>
             </div>
@@ -129,7 +137,7 @@ export default function Contact() {
               <p className="text-[#a09ba2]">Lucas Gomes</p>
 
               <p className="flex gap-2 mt-2 text-[#bab6bc]">
-                Visitar perfil
+                {t("contact.visitarPerfil")}
                 <RightArrowIcon />
               </p>
             </div>
@@ -148,7 +156,7 @@ export default function Contact() {
               <p className="text-[#a09ba2] mt-1">+55 (31) 98428-2118</p>
 
               <p className="flex gap-2 mt-2 text-[#bab6bc]">
-                Entrar em contato
+                {t("contact.entrarEmContato")}
                 <RightArrowIcon />
               </p>
             </div>
@@ -156,5 +164,5 @@ export default function Contact() {
         </div>
       </div>
     </section>
-  )
+  );
 }

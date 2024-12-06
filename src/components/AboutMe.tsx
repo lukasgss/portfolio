@@ -1,5 +1,7 @@
+import { useMediaQuery } from "../hooks/useMediaQuery";
 import ButtonLink from "./common/ButtonLink";
 
+import { useTranslation } from "react-i18next";
 import lucasGomes from "../assets/images/lucas-gomes-2.webp";
 
 function AwardIcon() {
@@ -150,6 +152,9 @@ function ResumeIcon() {
 
 export default function AboutMe() {
   const currentYear = new Date().getFullYear();
+  const shouldCutText = useMediaQuery("(max-width: 768px)");
+
+  const { t } = useTranslation();
 
   return (
     <section
@@ -173,9 +178,11 @@ export default function AboutMe() {
         >
           <AwardIcon />
           <p className="text-sm sm:text-base text-[#d9d9d9] mb-0.5">
-            Experiência
+            {t("aboutMe.experiencia")}
           </p>
-          <p className="text-[#737274] text-xs">+{currentYear - 2021} anos</p>
+          <p className="text-[#737274] text-xs">
+            +{currentYear - 2021} {t("aboutMe.anos")}
+          </p>
         </div>
 
         <div
@@ -183,8 +190,14 @@ export default function AboutMe() {
          border border-[rgba(255,255,255,.1)] p-1 md:p-3"
         >
           <WorkIcon />
-          <p className="text-sm sm:text-base text-[#d9d9d9] mb-0.5">Projetos</p>
-          <p className="responsive-text text-[#737274] text-xs text-ellipsis overflow-hidden"></p>
+          <p className="text-sm sm:text-base text-[#d9d9d9] mb-0.5">
+            {t("aboutMe.projetos")}
+          </p>
+          <p className="responsive-text text-[#737274] text-xs text-ellipsis overflow-hidden">
+            {shouldCutText
+              ? `+15 ${t("aboutMe.desenvolvidosShort")}`
+              : `+15 ${t("aboutMe.desenvolvidos")}`}
+          </p>
         </div>
 
         <div
@@ -192,17 +205,15 @@ export default function AboutMe() {
          border border-[rgba(255,255,255,.1)] p-1 md:p-3"
         >
           <WorldIcon />
-          <p className="text-sm sm:text-base text-[#d9d9d9] mb-0.5">Idiomas</p>
-          <p className="text-[#737274] text-xs">2 fluentes</p>
+          <p className="text-sm sm:text-base text-[#d9d9d9] mb-0.5">
+            {t("aboutMe.idiomas")}
+          </p>
+          <p className="text-[#737274] text-xs">{t("aboutMe.fluentes")}</p>
         </div>
       </div>
 
       <p className="text-slate-200 w-full lg:max-w-[80%] mt-7 text-lg lg:text-xl">
-        Desenvolvedor .NET especializado em criar aplicações web robustas e
-        escaláveis. Experiência em desenvolvimento full stack com .NET, xUnit e
-        bancos de dados SQL e NoSQL. Foco na arquitetura adequada pro projeto e
-        princípios SOLID para entregar soluções de alta qualidade com interfaces
-        modernas e intuitivas.
+        {t("aboutMe.description")}
       </p>
 
       <ButtonLink
@@ -210,7 +221,7 @@ export default function AboutMe() {
         link="https://drive.google.com/file/d/1s3w24bmDPxA3ZV0uhsK2A7LWRXjJvEY_/view?usp=sharing"
         className="mt-12"
       >
-        Baixar currículo
+        {t("aboutMe.verCurriculo")}
         <ResumeIcon />
       </ButtonLink>
     </section>

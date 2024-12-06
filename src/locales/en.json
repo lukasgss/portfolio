@@ -1,0 +1,60 @@
+{
+  "header": {
+    "inicio": "Home",
+    "sobre": "About",
+    "skills": "Skills",
+    "projetos": "Projects",
+    "contato": "Contact"
+  },
+  "introduction": {
+    "title": "Hello, I am",
+    "subtitle": "a Full Stack developer",
+    "description": "Software developer with ongoing bachelor's degree in Information Systems and passionate about technology.",
+    "entreEmContato": "Get in touch",
+    "rolarParaBaixo": "Scroll down"
+  },
+  "aboutMe": {
+    "experiencia": "Experience",
+    "anos": "years",
+    "projetos": "Projects",
+    "desenvolvidos": "developed",
+    "desenvolvidosShort": "developed",
+    "idiomas": "Languages",
+    "fluentes": "bilingual",
+    "description": ".NET Developer specialized in creating robust and scalable web applications. Experienced in full stack development with .NET, xUnit, SQL and NoSQL databases. Focused on appropriate architecture for the problem to solve and SOLID principles to deliver high-quality solutions with modern and intuitive interfaces.",
+    "verCurriculo": "See resume"
+  },
+  "skills": {
+    "habilidadesTecnicas": "Technical skills"
+  },
+  "projects": {
+    "descricaoAcheMeuPet": "Web application to find homes for abandoned animals, whether lost or up for adoption.",
+    "descricaoSurpriseLove": "SaaS created to surprise your partner with a personalized website.",
+    "descricaoYouIn": "Ethics and ombudsman channel for handling complaints, suggestions, and many other situations within the organization.",
+    "descricaoBsCommerce": "Bidirectional data synchronization between e-commerce and client's ERP.",
+    "descricaoTheConsulting": "Candidate recruitment tool using talent pool.",
+    "descricaoESporti": "Web application for organizing online or in-person gaming tournaments.",
+    "descricaoMultisports": "Sports management platform for tournaments, leagues, federations, projects and sports organizations.",
+    "descricaoSchools": "Platform for managing schools, franchises, and sports school networks.",
+    "projetos": "Projects",
+    "todos": "All",
+    "profissional": "Professional",
+    "pessoal": "Personal",
+    "visualizar": "View"
+  },
+  "contact": {
+    "contato": "Contact",
+    "faleComigo": "Message me",
+    "enviarEmail": "Send e-mail",
+    "visitarPerfil": "View profile",
+    "entrarEmContato": "Get in touch"
+  },
+  "bandeiras": {
+    "brasil": "Portuguese",
+    "eua": "English"
+  },
+  "linguagens": {
+    "portugues": "Portuguese",
+    "ingles": "English"
+  }
+}

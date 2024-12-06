@@ -4,6 +4,7 @@ import react from "../assets/images/tech/react.webp";
 import tailwind from "../assets/images/tech/tailwind.webp";
 import typescript from "../assets/images/tech/typescript.webp";
 
+import { useTranslation } from "react-i18next";
 import azurePipelines from "../assets/images/tech/azure-pipelines.webp";
 import docker from "../assets/images/tech/docker.webp";
 import dotnet from "../assets/images/tech/dotnet.webp";
@@ -60,6 +61,8 @@ function IconServer() {
 }
 
 export default function Skills() {
+  const { t } = useTranslation();
+
   return (
     <section
       id="skills"
@@ -67,7 +70,7 @@ export default function Skills() {
       transition-all duration-200 scroll-m-[60px] mt-12 md:mt-0"
     >
       <h2 className="text-3xl md:text-5xl text-center mt-12 mb-8">
-        Habilidades técnicas
+        {t("skills.habilidadesTecnicas")}
       </h2>
 
       <div className="flex flex-col gap-10">

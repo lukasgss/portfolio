@@ -1,7 +1,12 @@
+import { useTranslation } from "react-i18next";
 import { TypeAnimation } from "react-type-animation";
 import ButtonLink from "./common/ButtonLink";
 
-function IconLinkedin() {
+type IconProps = {
+  className?: string;
+};
+
+function IconLinkedin({ className }: Readonly<IconProps>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -13,6 +18,7 @@ function IconLinkedin() {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
+      className={className}
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M8 11v5" />
@@ -24,7 +30,7 @@ function IconLinkedin() {
   );
 }
 
-function IconGithub() {
+function IconGithub({ className }: Readonly<IconProps>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -36,6 +42,7 @@ function IconGithub() {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
+      className={className}
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
@@ -135,6 +142,8 @@ function IconWhatsApp() {
 }
 
 export default function Introduction() {
+  const { t } = useTranslation();
+
   return (
     <section
       id="home"
@@ -149,7 +158,7 @@ export default function Introduction() {
               target="_blank"
               className="text-[#bfbfbf] hover:text-white"
             >
-              <IconLinkedin />
+              <IconLinkedin className="lg:w-8 lg:h-8" />
             </a>
 
             <a
@@ -157,7 +166,7 @@ export default function Introduction() {
               target="_blank"
               className="text-[#bfbfbf] hover:text-white"
             >
-              <IconGithub />
+              <IconGithub className="lg:w-8 lg:h-8" />
             </a>
 
             <a
@@ -173,17 +182,18 @@ export default function Introduction() {
         </div>
 
         <div className="animation-container col-span-4 mt-8">
-          <h3 className="text-2xl font-semibold text-[#831699]">Olá, eu sou</h3>
+          <h3 className="text-2xl font-semibold text-[#831699]">
+            {t("introduction.title")}
+          </h3>
           <TypeAnimation
-            sequence={["Lucas Gomes", 2000, "Desenvolvedor Full Stack", 2000]}
+            sequence={["Lucas Gomes", 2000, t("introduction.subtitle"), 2000]}
             speed={10}
             deletionSpeed={55}
             repeat={Infinity}
           />
 
           <p className="max-w-[450px] text-slate-300 text-lg md:text-xl lg:mt-3">
-            Desenvolvedor de software, bacharel em andamento em Sistemas de
-            Informação e apaixonado por tecnologia.
+            {t("introduction.description")}
           </p>
 
           <ButtonLink
@@ -191,7 +201,7 @@ export default function Introduction() {
             icon={<IconSend />}
             className="mt-8 md:mt-16"
           >
-            Entre em contato
+            {t("introduction.entreEmContato")}
           </ButtonLink>
         </div>
 
@@ -201,7 +211,7 @@ export default function Introduction() {
       <div className="hidden lg:block absolute left-[42.5%] bottom-8 animate-[customBounce_1s_ease-in-out_infinite]">
         <a href="#about" className="flex items-center gap-2">
           <IconMouse />
-          <p className="text-[#d0d0d1]">Rolar para baixo</p>
+          <p className="text-[#d0d0d1]">{t("introduction.rolarParaBaixo")}</p>
           <IconArrowDown />
         </a>
       </div>

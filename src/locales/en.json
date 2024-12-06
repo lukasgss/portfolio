@@ -14,6 +14,7 @@
     "rolarParaBaixo": "Scroll down"
   },
   "aboutMe": {
+    "sobreMim": "About me",
     "experiencia": "Experience",
     "anos": "years",
     "projetos": "Projects",
@@ -56,5 +57,9 @@
   "linguagens": {
     "portugues": "Portuguese",
     "ingles": "English"
+  },
+  "footer": {
+    "desenvolvidoCom": "Developed with",
+    "porLucasGomes": "by Lucas Gomes"
   }
 }

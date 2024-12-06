@@ -160,9 +160,11 @@ export default function AboutMe() {
     <section
       id="about"
       className="min-h-screen flex flex-col items-center bg-transparent w-[85%] md:w-[59%] mx-auto scroll-m-[60px]
-       transition-all duration-200 mt-8 md:pt-0"
+       transition-all duration-200 md:mt-8 md:pt-0"
     >
-      <h2 className="text-3xl md:text-5xl text-center mt-8 mb-6">Sobre mim</h2>
+      <h2 className="text-3xl md:text-5xl text-center mt-8 mb-6">
+        {t("aboutMe.sobreMim")}
+      </h2>
 
       <img
         src={lucasGomes.src}

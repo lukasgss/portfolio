@@ -27,10 +27,10 @@ export default function Projects() {
     },
     {
       type: "personal",
-      name: "SurpriseLove",
+      name: "Surpries",
       description: t("projects.descricaoSurpriseLove"),
       image: surpriseLove.src,
-      link: "https://surprise-love-landing-page.vercel.app/",
+      link: "https://surpries.com",
     },
     {
       type: "work",

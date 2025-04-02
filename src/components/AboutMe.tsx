@@ -220,7 +220,7 @@ export default function AboutMe() {
 
       <ButtonLink
         newPage
-        link="https://drive.google.com/file/d/1s3w24bmDPxA3ZV0uhsK2A7LWRXjJvEY_/view?usp=sharing"
+        link="https://drive.google.com/file/d/1OniwKBaZlotT6yXMjATCP3sKo9Q16pMj/view?usp=sharing"
         className="mt-12"
       >
         {t("aboutMe.verCurriculo")}
